@@ -110,83 +110,80 @@ The system intelligently adapts its retrieval strategy based on query type, util
 
 ## 📦 Project Structure
 
-
 ```
-├── 📁 guide_docs
-│   ├── 📝 CODE_STYLE_GUIDE.md
-│   ├── 📝 DOCUMENTATION_INDEX.md
-│   ├── 📝 DOCUMENT_FLOW_VISUAL.md
-│   ├── 📝 DOCUMENT_UPLOAD_FLOW.md
-│   ├── 📝 QDRANT_SETUP_GUIDE.md
-│   ├── 📝 QUICK_REFERENCE.md
-│   └── 📄 description.txt
-├── 📁 images
-│   └── 🖼️ adaptive_RAG.png
-├── 📁 src
-│   ├── 📁 api
-│   │   ├── 🐍 __init__.py
-│   │   └── 🐍 routes.py
-│   ├── 📁 config
-│   │   ├── 🐍 __init__.py
-│   │   ├── ⚙️ prompts.yaml
-│   │   └── 🐍 settings.py
-│   ├── 📁 core
-│   │   ├── 🐍 __init__.py
-│   │   ├── 🐍 config.py
-│   │   └── 🐍 logger.py
-│   ├── 📁 db
-│   │   ├── 🐍 __init__.py
-│   │   └── 🐍 mongo_client.py
-│   ├── 📁 llms
-│   │   ├── 🐍 __init__.py
-│   │   ├── 🐍 gemini.py
-│   │   ├── 🐍 groq.py
-│   │   ├── 🐍 huggingface.py
-│   │   └── 🐍 openai.py
-│   ├── 📁 memory
-│   │   ├── 🐍 __init__.py
-│   │   ├── 🐍 chat_history_mongo.py
-│   │   └── 🐍 chathistory_in_memory.py
-│   ├── 📁 models
-│   │   ├── 🐍 __init__.py
-│   │   ├── 🐍 grade.py
-│   │   ├── 🐍 query_request.py
-│   │   ├── 🐍 route_identifier.py
-│   │   ├── 🐍 state.py
-│   │   └── 🐍 verification_result.py
-│   ├── 📁 rag
-│   │   ├── 🐍 __init__.py
-│   │   ├── 🖼️ adaptive_RAG.png
-│   │   ├── 🐍 document_upload.py
-│   │   ├── 🐍 graph_builder.py
-│   │   ├── 🐍 nodes.py
-│   │   ├── 🐍 reAct_agent.py
-│   │   └── 🐍 retriever_setup.py
-│   ├── 📁 tools
-│   │   ├── 🐍 __init__.py
-│   │   ├── 🐍 common_tools.py
-│   │   └── 🐍 graph_tools.py
-│   ├── 🐍 __init__.py
-│   └── 🐍 main.py
-├── 📁 web
-│   ├── 📁 streamlit_app
-│   │   ├── 📁 pages
-│   │   │   ├── 🐍 __init__.py
-│   │   │   └── 🐍 chat.py
-│   │   ├── 📁 utils
-│   │   │   ├── 🐍 __init__.py
-│   │   │   └── 🐍 api_client.py
-│   │   ├── 🐍 __init__.py
-│   │   └── 🐍 home.py
-│   └── 📄 requirements_frontend.txt
-├── ⚙️ .gitignore
-├── 📝 README.md
-├── 📝 STRUCTURE.md
-├── 📝 TREE.md
-├── 📄 requirements.txt
-└── 🐍 test.py
+├── guide_docs
+│   ├── CODE_STYLE_GUIDE.md
+│   ├── DOCUMENTATION_INDEX.md
+│   ├── DOCUMENT_FLOW_VISUAL.md
+│   ├── DOCUMENT_UPLOAD_FLOW.md
+│   ├── QDRANT_SETUP_GUIDE.md
+│   ├── QUICK_REFERENCE.md
+│   └── description.txt
+├── images
+│   └── adaptive_RAG.png
+├── src
+│   ├── api
+│   │   ├── __init__.py
+│   │   └── routes.py
+│   ├── config
+│   │   ├── __init__.py
+│   │   ├── prompts.yaml
+│   │   └── settings.py
+│   ├── core
+│   │   ├── __init__.py
+│   │   ├── config.py
+│   │   └── logger.py
+│   ├── db
+│   │   ├── __init__.py
+│   │   └── mongo_client.py
+│   ├── llms
+│   │   ├── __init__.py
+│   │   ├── gemini.py
+│   │   ├── groq.py
+│   │   ├── huggingface.py
+│   │   └── openai.py
+│   ├── memory
+│   │   ├── __init__.py
+│   │   ├── chat_history_mongo.py
+│   │   └── chathistory_in_memory.py
+│   ├── models
+│   │   ├── __init__.py
+│   │   ├── grade.py
+│   │   ├── query_request.py
+│   │   ├── route_identifier.py
+│   │   ├── state.py
+│   │   └── verification_result.py
+│   ├── rag
+│   │   ├── __init__.py
+│   │   ├── adaptive_RAG.png
+│   │   ├── document_upload.py
+│   │   ├── graph_builder.py
+│   │   ├── nodes.py
+│   │   ├── reAct_agent.py
+│   │   └── retriever_setup.py
+│   ├── tools
+│   │   ├── __init__.py
+│   │   ├── common_tools.py
+│   │   └── graph_tools.py
+│   ├── __init__.py
+│   ├── main.py
+│   └── requirements.txt
+├── web
+│   └── streamlit_app
+│       ├── pages
+│       │   ├── __init__.py
+│       │   └── chat.py
+│       ├── utils
+│       │   ├── __init__.py
+│       │   └── api_client.py
+│       ├── __init__.py
+│       ├── home.py
+│       └── requirements_frontend.txt
+├── .gitignore
+├── README.md
+├── description.txt
+└── test.py
 ```
-
 ---
 *Generated by FileTree Pro Extension*
 ---
