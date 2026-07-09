@@ -1,0 +1,55 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Environment & secrets
+.env
+.env.*
+credentials.json
+*.key
+*.pem
+
+# Packaging / build
+build/
+dist/
+*.egg-info/
+*.whl
+
+# Tests / coverage
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# IDEs / editors
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Databases / data dumps
+*.sqlite3
+*.db
+/data/
+dump/
+*.dump
+
+# Jupyter
+.ipynb_checkpoints
+
+# Temp files
+*.swp
+*~
